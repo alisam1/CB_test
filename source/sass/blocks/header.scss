@@ -357,13 +357,31 @@
     background: #eeeeee; ;
 }
 
+.form input[type="checkbox"]::-ms-check
+{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    padding: 0;
+    margin-bottom: 19px;
+    position: relative;
+    background-color: #eeeeee;
+    margin-right: 5px;
+    border: 0;
+    background: #eeeeee; ;
+}
+
 
 .form input[type="checkbox"] + label span
 {
    display: block;
 }
 
-
+.form input [type="checkbox"]:not(:checked) + label::after,
 .form input[type="checkbox"]:checked
 {
   background:url("../img/cross_grey.svg") center;
@@ -371,6 +389,14 @@
   background-repeat: no-repeat;
 
 }
+
+.form input [type="checkbox"]:not(:checked) + label:after {
+                opacity: 0;
+            }
+
+.form input[type="checkbox"]:checked + label:after {
+                opacity: 1;
+            }
 
 /* Select */
 
