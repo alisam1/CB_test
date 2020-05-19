@@ -390,14 +390,6 @@
 
 }
 
-.form input [type="checkbox"]:not(:checked) + label:after {
-                opacity: 0;
-            }
-
-.form input[type="checkbox"]:checked + label:after {
-                opacity: 1;
-            }
-
 /* Select */
 
 .turnintodropdown {
