@@ -1,0 +1,186 @@
+.list
+{
+    background-color: #eeeeee;
+    margin-top: 75px;
+    padding-bottom: 90px;
+}
+
+.list__wrapper
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.list__wrapper-left img
+{
+    position: relative;
+    bottom: 25px;
+}
+
+.list__title
+{
+    font-family: $font-family;
+    color: $text-color-blue;
+    font-size: 48px;
+    font-weight: bold;
+    margin:0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 85px;
+}
+
+.list__item
+{
+   margin-top: 15px;
+   list-style: none;
+   display: flex;
+}
+
+.list__item a
+{
+    font-family: $font-family;
+    color: $text-color-blue;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px dashed $text-color-blue;
+    padding-bottom: 15px;
+}
+
+
+.num{
+  font-family: $font-family;
+  color: $text-color;
+  font-size: 18px;
+  font-weight: bold;
+  background: $text-color-blue;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5px 10px;
+  margin-top: 0;
+  margin-right: 20px;
+  line-height: 40px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.list__top
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list__top h3
+{
+  font-family: $font-family;
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.list__top img
+{
+    width: 25px;
+}
+
+.list__modal
+{
+  font-family: $font-family;
+  color: #000;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.list__group
+{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.list__group .list__button
+{
+  border: none;
+  border-radius: 2px;
+  background: linear-gradient( -90deg, rgb(68,136,187) 0%, rgb(46,93,128) 100%);
+  width: 125px;
+  height: 30px;
+  color: #eeeeee;
+  padding: 0;
+}
+
+.list__group a
+{
+    font-family: $font-family;
+    color: #aaaaaa;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 15px;
+    margin-right: 40px;
+}
+
+ @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .list {
+        margin-top: 45px;
+    }
+
+    .list__wrapper
+    {
+        flex-direction: column;
+    }
+
+    .list__wrapper-left
+    {
+        display: none;
+    }
+
+ }
+
+
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .list__modal {
+    width: 80%;
+    height: auto;
+    }
+        .list {
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .list__wrapper
+    {
+        flex-direction: column;
+    }
+
+    .list__wrapper-left
+    {
+        display: none;
+    }
+
+    .list__title
+    {
+        display: none;
+    }
+
+    .list__list
+    {
+        padding-left: 0;
+    }
+
+    .list__item a
+    {
+        width: 70%;
+    }
+
+ }

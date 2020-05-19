@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <title>CitiBank Test</title>
+</head>
+<body>
+
+    <section class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__wrapper-left">
+                    <h1 class="header__title">Banner header</h1>
+                    <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                    <span>do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                    <span>Ut enim ad minim veniam, quis nostrud</span></p>
+                </div>
+
+                <div class="header__wrapper-right">
+                    <div class="header__form">
+                        <form id="form" class="form">
+                            <h3 class="form__title">Request form</h3>
+                            <div class="form__input  form__input--email">
+                                <input type="email" id="email" name="email">
+                                <label class="label-text label__email" for="email" placeholder="">Enter your email</label>
+                            </div>
+                            <div class="form__input form__input--name">
+                                <input type="text" id="userName" name="userName">
+                                <label class="label-text label__username" for="userName" placeholder="">Enter your name</label>
+                            </div>
+                            <div class="form__input">
+                            <select class="turnintodropdown" name="formSelect" id="form__select">
+                                <option value="">Select your country:</option>
+                                <option value="Russia">Russia</option>
+                                <option value="USA">USA</option>
+                                <option value="Finland">Finland</option>
+                                <option value="Estonia">Estonia</option>
+                            </select>
+                            </div>
+                            <p class="form__checkbox">
+                                <input type="checkbox" name="checkbox" class="checkbox" id="checkbox-id">
+                                <label for="checkbox-id"><span></span>I agree with Terms & Conditions</label>
+                            </p>
+                            <div class="form__group">
+                                <input type="submit" value="Submit">
+                                <a href="#">Hyperlink</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <section class="card">
+        <div class="container">
+            <div class="card__wrapper">
+                <dix class="card__wrapper-top">
+                    <div class="card__item card__item--one">
+                        <img src="img/card_img_1.png" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h3 class="card__title">Post header 1</h3>
+                                <img src="img/icon_square.svg" alt="">
+                            </div>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="card__item card__item--two">
+                        <img src="img/card_img_2.png" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h3 class="card__title">Post header 2</h3>
+                                <img src="img/icon_square.svg" alt="">
+                            </div>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="card__item card__item--three">
+                        <img src="img/card_img_3.png" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h3 class="card__title">Post header 3</h3>
+                                <img src="img/icon_square.svg" alt="">
+                            </div>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p> 
+                        </div>
+                    </div>
+                </dix>
+                <div class="card__wrapper-bottom">
+                    <div class="card__item card__item--four">
+                        <img src="img/card_img_4.png" alt="">
+                        <div class="card__info">
+                            <div>
+                            <h3 class="card__title">Post header 4</h3>
+                            <img src="img/icon_square.svg" alt="">
+                            </div>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>
+                    <div class="card__item card__item--five">
+                        <img src="img/card_img_5.png" alt="">
+                        <div class="card__info">
+                            <div>
+                                <h3 class="card__title">Post header 5</h3>
+                                <img src="img/icon_square.svg" alt="">
+                            </div>
+                            <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list">
+        <div class="container">
+            <div class="list__wrapper">
+                <div class="list__wrapper-left">
+                    <img src="img/imac_img.png" alt="Imac">
+                </div>
+                <div class="list__wrapper__right">
+                    <h3 class="list__title">Title text</h3>
+                        <ol class="list__list">
+                            <li class="list__item"><span class="num">1</span><a class="popup-modal" href="#test-modal_1">Duis aute irure dolor in reprehenderit<sup>1</sup> in voluptate velit</a></li>
+                            <div id="test-modal_1" class="list__modal mfp-hide white-popup-block">
+                                <div class="list__top">
+                                    <h3>Modal dialog</h3>
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/icon_close.svg" alt=""></a></p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. 
+                                </p>
+                                <div class="list__group">
+                                    <button class="list__button">Accept</button>
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div>
+                            <li class="list__item"><span class="num">2</span><a class="popup-modal" href="#test-modal_2">Ullamco laboris nisi ut aliquip ex ea commodo consequat</a></li>
+                            <div id="test-modal_2" class="list__modal mfp-hide white-popup-block">
+                                <div class="list__top">
+                                    <h3>Modal dialog</h3>
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/icon_close.svg" alt=""></a></p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.
+                                </p>
+                                <div class="list__group">
+                                    <button class="list__button">Accept</button>
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div>
+                            <li class="list__item"><span class="num">3</span><a class="popup-modal" href="#test-modal_3">Ut enim ad minim veniam, quis nostrud exercitation</a></li>
+                            <div id="test-modal_3" class="list__modal mfp-hide white-popup-block">
+                                <div class="list__top">
+                                    <h3>Modal dialog</h3>
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/icon_close.svg" alt=""></a></p>
+                                </div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.
+                            </p>
+                                <div class="list__group">
+                                    <button class="list__button">Accept</button>
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div>
+                            <li class="list__item"><span class="num">4</span><a class="popup-modal" href="#test-modal_4">Et dolore magna aliqua</a></li>
+                            <div id="test-modal_4" class="list__modal mfp-hide white-popup-block">
+                                <div class="list__top">
+                                    <h3>Modal dialog</h3>
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/icon_close.svg" alt=""></a></p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.
+                                </p>
+                                <div class="list__group">
+                                    <button class="list__button">Accept</button>
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div>
+                            <li class="list__item"><span class="num">5</span><a class="popup-modal" href="#test-modal_5">Sed do eiusmod tempor<sup>2</sup> incididunt ut labore</a></li>
+                            <div id="test-modal_5" class="list__modal mfp-hide white-popup-block">
+                                <div class="list__top">
+                                    <h3>Modal dialog</h3>
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/icon_close.svg" alt=""></a></p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua.
+                                </p>
+                                <div class="list__group">
+                                    <button class="list__button">Accept</button>
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div>
+                            <li class="list__item"><span class="num">6</span><a class="popup-modal" href="#test-modal_6">Lorem ipsum dolor sit amet<sup>3</sup> consectetur adipisicing elit</a></li>
+                            <div id="test-modal_6" class="list__modal mfp-hide white-popup-block">
+                                <div class="list__top">
+                                    <h3>Modal dialog</h3>
+                                    <p><a class="popup-modal-dismiss" href="#"><img src="img/icon_close.svg" alt=""></a></p>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                                dolore magna aliqua.</p>
+                                <div class="list__group">
+                                    <button class="list__button">Accept</button>
+                                    <a href="#">Cancel</a>
+                                </div>
+                            </div>
+                        </ol>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <p class="footer_descroption"><sup>1</sup> Reprehenderit - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore</p>
+                <p class="footer_descroption"><sup>2</sup> Tempor - Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p class="footer_descroption"><sup>3</sup> Amet - Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </div>
+    </section>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/magnific_popup.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/validate_form.js"></script>
+</body>
+</html>

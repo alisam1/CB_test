@@ -1,0 +1,202 @@
+.card__wrapper
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 75px;
+}
+
+ .card__item img
+ {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     object-position: center;
+ }
+
+
+
+
+
+.card__wrapper-top, .card__wrapper-bottom
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.card__wrapper-top .card__item
+{
+    width: 32.5%;
+    height: 150px;
+    background-size: cover;
+    position: relative;
+}
+
+.card__wrapper-bottom .card__item
+{
+    width: 49.5%;
+    height: 150px;
+    background-size: cover;
+    position: relative;
+}
+
+ .card__item
+ {
+     position: relative;
+ }
+
+.card__info {
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  background-color: rgb(68, 136, 187);
+  opacity: 0.749;
+  color: rgba(238, 238, 238, 1);
+  height: 40px;
+  overflow: hidden;
+   display: block;
+   -moz-transition: height 0.5s ease;
+   -webkit-transition: height 0.5s ease;
+   -o-transition: height 0.5s ease;
+   transition: height 0.5s ease;
+   bottom: 0px;
+   cursor: pointer;
+  
+} 
+
+.card__info div {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.card__info img 
+{
+    width: 20px;
+}
+
+.card__wrapper-bottom .card__info
+{
+    bottom: 0;
+}
+
+.card__info:hover
+{
+   height: 100%;
+}
+
+.card__title
+{
+    font-family: $font-family;
+    color: rgba(238, 238, 238, 1);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.card__description
+{
+    font-family: $font-family;
+    color: rgba(238, 238, 238, 1);
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ @media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    .card__wrapper-top, .card__wrapper-bottom
+    {
+        flex-direction: column;
+    }
+
+    .card__wrapper-top .card__item
+    {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+     .card__wrapper-bottom .card__item
+    {
+        width: 100%;
+        height: 240px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card__info
+    {
+        height: 100%;
+    }
+
+    .card__title
+    {
+        margin-top: 25px;
+    }
+
+ }
+
+
+ @media screen and (min-width: 320px) and (max-width: 767px) {
+
+    .card__wrapper
+    {
+        padding-top: 20px;
+    }
+
+    .card__wrapper-bottom
+    {
+        margin-bottom: 0;
+    }
+    
+     .card__wrapper-top, .card__wrapper-bottom
+    {
+        flex-direction: column;
+    }
+
+    .card__wrapper-top
+    {
+        margin-bottom: 0;
+    }
+
+    .card__wrapper-top .card__item
+    {
+        width: 100%;
+        height: 170px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+     .card__wrapper-bottom .card__item
+    {
+        width: 100%;
+        height: 170px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .card__info
+    {
+        height: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .card__title
+    {
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .card__description
+    {
+        margin-top: 0;
+    }
+ }
