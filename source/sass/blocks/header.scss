@@ -239,7 +239,7 @@
 .form__input--email input.error + label::after
 {
     content: "";
-    display: block;
+    display: block !important;
     width: 10px;
     height: 10px;
     background-image: url("../img/cross_red.svg");
@@ -330,6 +330,7 @@
 
 .form .form__checkbox label
 {
+    width: 100%;
     font-family: $font-family;
     color: #aaaaaa;
     font-size: 16px;
@@ -352,6 +353,8 @@
     position: relative;
     background-color: #eeeeee;
     margin-right: 5px;
+    border: 0;
+    background: #eeeeee; ;
 }
 
 
@@ -396,6 +399,10 @@
    -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+}
+
+select::-ms-expand {
+display: none;
 }
  
 .trigger:hover {
